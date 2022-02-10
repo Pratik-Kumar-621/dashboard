@@ -1,0 +1,36 @@
+@import "../../../variable";
+.left-bar {
+  width: 270px;
+  height: 100vh;
+  background-color: #fff;
+  .left-bar-header {
+    position: relative;
+    color: $text-normal;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.12);
+    z-index: 2;
+  }
+  .left-bar-nav {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    .left-bar-nav-item {
+      text-decoration: none;
+      color: $text-normal;
+      padding: 12px;
+      font-size: 14px;
+      font-weight: 600;
+      padding-left: 23.6px;
+    }
+    .active-nav-item {
+      color: $link;
+      border-left: 3.6px solid $link;
+      padding-left: 20px;
+      background-color: $link-hover;
+    }
+  }
+}

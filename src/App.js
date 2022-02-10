@@ -12,23 +12,26 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/dashboard">
           <DashBoard />
+        </Route>
+        <Route exact path="/add-posts">
+          <AddPosts />
         </Route>
         <Route exact path="/blog-posts">
           <BlogPost />
         </Route>
-        <Route exact path="/errors">
-          <Error />
-        </Route>
         <Route exact path="/form-and-component">
           <FormsAndComponents />
+        </Route>
+        <Route exact path="/table">
+          <Tables />
         </Route>
         <Route exact path="/profile">
           <Profile />
         </Route>
-        <Route exact path="/table">
-          <Tables />
+        <Route exact path="/errors">
+          <Error />
         </Route>
       </Switch>
     </Router>
