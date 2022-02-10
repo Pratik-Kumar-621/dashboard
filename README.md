@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://pratik-kumar-621.github.io/dashboard/).
+This project was bootstrapped with [Create React App](https://pratik-kumar-621.github.io/dashboard/#/dashboard).
 
 ## Available Scripts
 
