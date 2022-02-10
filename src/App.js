@@ -7,31 +7,32 @@ import Error from "./screens/Errors/Error";
 import FormsAndComponents from "./screens/FormsAndComponents/FormsAndComponents";
 import Profile from "./screens/Profile/Profile";
 import Tables from "./screens/Tables/Tables";
+import PageStructure from "./screens/PageStructure";
 
 const App = () => {
   return (
     <Router>
       <Switch>
         <Route exact path="/dashboard">
-          <DashBoard />
+          <PageStructure children={<DashBoard />} />
         </Route>
         <Route exact path="/add-posts">
-          <AddPosts />
+          <PageStructure children={<AddPosts />} />
         </Route>
         <Route exact path="/blog-posts">
-          <BlogPost />
+          <PageStructure children={<BlogPost />} />
         </Route>
         <Route exact path="/form-and-component">
-          <FormsAndComponents />
+          <PageStructure children={<FormsAndComponents />} />
         </Route>
         <Route exact path="/table">
-          <Tables />
+          <PageStructure children={<Tables />} />
         </Route>
         <Route exact path="/profile">
-          <Profile />
+          <PageStructure children={<Profile />} />
         </Route>
         <Route exact path="/errors">
-          <Error />
+          <PageStructure children={<Error />} />
         </Route>
       </Switch>
     </Router>
