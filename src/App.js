@@ -14,25 +14,53 @@ const App = () => {
     <Router>
       <Switch>
         <Route exact path="/dashboard">
-          <PageStructure children={<DashBoard />} />
+          <PageStructure
+            children={<DashBoard />}
+            title="DashBoard"
+            subtitle="Blog Overview"
+          />
         </Route>
         <Route exact path="/add-posts">
-          <PageStructure children={<AddPosts />} />
+          <PageStructure
+            children={<AddPosts />}
+            title="Add Posts"
+            subtitle="Subtitle for Add Posts"
+          />
         </Route>
         <Route exact path="/blog-posts">
-          <PageStructure children={<BlogPost />} />
+          <PageStructure
+            children={<BlogPost />}
+            title="Blog Post"
+            subtitle="Subtitle for Blog Post"
+          />
         </Route>
         <Route exact path="/form-and-component">
-          <PageStructure children={<FormsAndComponents />} />
+          <PageStructure
+            children={<FormsAndComponents />}
+            title="Forms And Components"
+            subtitle="Subtitle for Forms And Components"
+          />
         </Route>
         <Route exact path="/table">
-          <PageStructure children={<Tables />} />
+          <PageStructure
+            children={<Tables />}
+            title="Tables"
+            subtitle="Subtitle for Tables"
+          />
         </Route>
         <Route exact path="/profile">
-          <PageStructure children={<Profile />} />
+          <PageStructure
+            children={<Profile />}
+            title="Profile"
+            subtitle="Subtitle for Profile"
+          />
         </Route>
         <Route exact path="/errors">
-          <PageStructure children={<Error />} />
+          <PageStructure
+            children={<Error />}
+            title="Error"
+            subtitle="Subtitle for Error"
+          />
         </Route>
       </Switch>
     </Router>

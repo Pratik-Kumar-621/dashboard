@@ -1,7 +1,7 @@
 import React from "react";
 
 const FormsAndComponents = () => {
-  return <div>FormsAndComponents</div>;
+  return <div className="skeleton">FormsAndComponents</div>;
 };
 
 export default FormsAndComponents;
